@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Atividades Cap04 </title>
+    <style>
+        h1{
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1> 4.3 </h1>
+    ESTÁ COMO COMENTARIO POR CAUSA DO USO DO PROMPT;
+    <!--<script>
+        var pulaLinha = function() {
+            document.write("<br>");
+        };
+
+        var mostra = function(frase) {
+            document.write(frase);
+            pulaLinha();
+        };
+
+        function calculaPontos(vitorias, empates, derrotas){
+            return ((vitorias * 3) + parseInt(empates)) - derrotas;
+        }
+
+        var vitorias = prompt("Quantos jogos o CDC Futebol Clube venceu?");
+        var empates = prompt("Quantos jogos o CDC Futebol Clube empatou?");
+        var derrotas = prompt("Quantas derrotas tem o CDC Futebol Clube?");
+        var pontos = calculaPontos(vitorias, empates, derrotas);
+
+        var vitoriasAdversario = prompt("Quantos jogos o time adversário venceu?");
+        var empatesAdversario = prompt("Quantos jogos o time adversário empatou?");
+        var derrotasAversario = prompt("Quantas derrotas o time adversário tem?");
+        var pontosAdversario = calculaPontos(vitoriasAdversario, empatesAdversario, derrotasAversario);
+        
+        if(pontos > pontosAdversario) {
+            mostra("Nosso time está indo MELHOR que o Livros Velhos!");
+            mostra("Nossos Pontos: " + pontos + " Pontos adv: " + pontosAdversario);
+        }
+        
+        if(pontos < pontosAdversario) {
+            mostra("Nosso time está indo PIOR que o Livros Velhos!");
+            mostra("Nossos Pontos: " + pontos + " Pontos adv: " + pontosAdversario);
+        }
+        
+        if(pontos == pontosAdversario) {
+            mostra("Nosso time está EMPATADO com o Livros Velhos!");
+            mostra("Nossos Pontos: " + pontos + " Pontos adv: " + pontosAdversario);
+        }
+    </script> -->
+
+    <h1> 4.6 </h1>
+    <script>
+        var pulaLinha = function() {
+            document.write("<br>");
+        };
+
+        var mostra = function(frase) {
+            document.write(frase);
+            pulaLinha();
+        };
+
+        function sorteia(n){
+            return Math.round(Math.random(0,n) * 100);
+        }
+
+        var numeroPensado = sorteia(100);
+        var chute = prompt("Já pensei. Qual você acha que é?");
+        if(chute == numeroPensado) {
+            mostra("Uau! Você acertou, pois eu pensei no " + numeroPensado);
+        }
+        if(chute > numeroPensado){
+            mostra("Você errou! Seu número é maior que o meu! Eu tinha pensado no " + numeroPensado + " e você digitou " + chute);
+        }
+        if(chute < numeroPensado){
+            mostra("Você errou! Seu número é menor que o meu! Eu tinha pensado no " + numeroPensado + " e você digitou " + chute);
+        }
+    </script>
+</body>
+</html>

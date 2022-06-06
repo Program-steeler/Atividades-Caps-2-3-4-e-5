@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Atividades Cap02 </title>
+    <style>
+        h1{
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1> 2.3 </h1>
+    <script>
+        document.write("Questão 1 " + "<br>");
+        document.write("Minha idade é: " + 25 + "<br>");
+
+        document.write("Questão 2 " + "<br>");
+        document.write("Minha idade é: " + 25 + "<br>");
+        document.write("Nossa diferença de idade é: " + (25 - 18) + "<br>");
+
+        document.write("Questão 3 " + "<br>");
+        document.write("Se passaram " + (2022/28) + " gerações");
+    </script>
+    <h1> 2.6 </h1>
+    <h3> Álcool ou Gasolina? </h3>
+    <script>
+        var tanque = 40;
+        var caminhoComGasolina = 480;
+        var consumoDeGasolina = caminhoComGasolina/tanque;
+        document.write("Foi consumido " + consumoDeGasolina + "L de gasolina");
+        var caminhoComAlcool = 300;
+        var consumoDeAlcool = caminhoComAlcool/tanque;
+        document.write("<br>" + "Foi consumido " + consumoDeAlcool + "L de Álcool");
+        document.write("<br>" + "Gasolina com .round: " + Math.round(consumoDeGasolina) + "<br>" + "Álcool com .round: " + Math.round(consumoDeAlcool));
+        document.write("<br>" + "Gasolina com toFixed(): " + consumoDeGasolina.toFixed(2) + "<br>" + "Álcool com toFixed(): " + consumoDeAlcool.toFixed(2));
+        var preçoAlcool = 2.40;
+        var preçoGasolina = 2.90;
+        var preçoPorKilometroGasolina = preçoGasolina/tanque;
+        var preçoPorKilometroAlcool = preçoAlcool/tanque;
+        document.write("<br>" + "preçoPorKMGasolina: " + preçoPorKilometroGasolina.toFixed(2) + "<br>" + "preçoPorKMAlcool: " + preçoPorKilometroAlcool.toFixed(2));
+        document.write("<br>" + "O preço mais baixo é o do Álcool");
+    </script>
+    <h1> 2.10 </h1>
+    <script>
+        var pulaLinha = function(){
+            document.write("<br>" + "<br>");
+        }
+
+        var pulaLinha2 = function(){
+            document.write("<br>" + "<hr>" + "<br>");
+        }
+
+        var mostra = function(frase){
+            document.write("<big>" + frase + "</big>");
+        }
+        //Função sem parênteses, sem o function e sem chaves não funcionam
+    </script>
+    <h1> 2.11 </h1>
+    <script>
+        document.write("Hello World!");
+        console.log("Olá mundo!");
+    </script>
+</body>
+</html>
