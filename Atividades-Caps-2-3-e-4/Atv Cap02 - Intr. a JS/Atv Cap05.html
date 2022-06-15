@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Atividades Cap05 </title>
+    <style>
+        h1{
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1> 5.3 </h1>
+    <!--<script>
+        var mostra = function(frase) {
+            document.write(frase + "<br>");
+        };
+        var anoDeCopa = 1930;
+        var AnoLimite = prompt("Qual o ano limite?");
+
+        while(anoDeCopa <= AnoLimite) {
+            mostra(anoDeCopa + " tem copa!");
+            anoDeCopa = anoDeCopa + 4;
+        }
+    </script> -->
+    <h1> 5.5 </h1>
+    <!--<script>
+        var mostra = function(frase) {
+            document.write(frase + "<br>");
+        };
+        var anoComoTexto = prompt("Informe o ano inicial");
+        var anoDeOlimp = parseInt(anoComoTexto);
+        var anoLimite = prompt("Qual o ano limite?");
+        while(anoDeOlimp <= anoLimite) {
+            mostra(anoDeOlimp + " é ano de Olimpíadas!");
+            anoDeOlimp = 4 + anoDeOlimp;
+        }
+        mostra("Ufa! Esses foram os anos de olimpíadas até " + anoLimite);
+    </script> -->
+    <h1> 5.6 </h1>
+    <!--<script>
+        var mostra = function(frase) {
+            document.write(frase + "<br>");
+        };
+        var valor = prompt("Qual tabuada você quer saber?")
+        var multiplicador = 1;
+            while(multiplicador <= 10) {
+                mostra(valor + " vezes " + multiplicador + " é igual a " + valor * multiplicador);
+                multiplicador = multiplicador + 1;
+        }
+        </script> -->
+        <h1> 5.11 </h1>
+        <script>
+            var numeroPensado = Math.round(Math.random() * 100);
+            var numeroDaTentativa = 1;
+            while(numeroDaTentativa <= 3) {
+                var chute = prompt("Qual você acha que é?");
+                if(chute == numeroPensado) {
+                    alert("Parabéns, você acertou!");
+                    break;
+                } else {
+                    if(chute < numeroPensado){
+                        alert("Você errou, seu número é menor que o meu! Será que ainda tem mais tentativas?");
+                    }
+                    if(chute > numeroPensado){
+                        alert("Você errou, seu número é maior que o meu! Será que ainda tem mais tentativas?");
+                    }
+                }
+                numeroDaTentativa++;
+            }
+            alert("O número era: " + numeroPensado);
+        </script>
+</body>
+</html>
