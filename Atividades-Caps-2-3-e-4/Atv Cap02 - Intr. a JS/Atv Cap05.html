@@ -53,7 +53,7 @@
         }
         </script> -->
         <h1> 5.11 </h1>
-        <script>
+        <!--<script>
             var numeroPensado = Math.round(Math.random() * 100);
             var numeroDaTentativa = 1;
             while(numeroDaTentativa <= 3) {
@@ -72,6 +72,16 @@
                 numeroDaTentativa++;
             }
             alert("O número era: " + numeroPensado);
+        </script> -->
+        <h1> 5.12 </h1>
+        <script>
+            tamanho = prompt("Digite o tamanho do quadrado")
+            for(var linha = 0; linha < tamanho; linha = linha + 1) {
+                for(var coluna = 0; coluna < tamanho; coluna = coluna + 1) {
+                    document.write("*");
+                }
+                document.write("<br>");
+            }
         </script>
 </body>
 </html>
