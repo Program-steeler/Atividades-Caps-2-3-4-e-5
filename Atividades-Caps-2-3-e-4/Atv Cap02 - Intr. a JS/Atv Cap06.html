@@ -34,6 +34,7 @@
     </script>
     -->
     <h1> 6.3 </h1>
+    <!--
     <input type="text" id="numero" />
     <input type="submit" id="adivinhar" value="Compare com o meu segredo!" />
     <script>
@@ -42,7 +43,7 @@
         var botaoClicado = function() {
             for(var i = 0; i < segredos.length; i = i + 1) {
                 if(segredos[i] == caixaDoNumero.value) {
-                    alert("Parabéns! Você acertou um dos números secretos");
+                    alert("Parabéns! Você acertou o " + [i+1] + "° número secreto");
                     return;
                 }
             }
@@ -50,6 +51,40 @@
         };
         var botaoAdivinhar = document.getElementById("adivinhar");
         botaoAdivinhar.onclick = botaoClicado;
+    </script>
+    -->
+    <h1> 6.4 </h1>
+    <input type="text" id="numero" />
+    <input type="submit" value="Adicione e verifique no Bingo!" id="verificar" onclick="adicionarSorteado()"/>
+    <script>
+        var sorteados = [];
+        var chutes = [];
+        for(var i = 0; i < 6; i += 1){
+            sorteados.push(Math.round(Math.random() * 60));
+        }
+        for(var x = 0; x < 6; x += 1){
+            var chute = prompt("Digite um número");
+            chutes.push(chute);
+        }
+        for(var x = 0; x < 6; x += 1){
+            var acertos = 0;
+            if(sorteados[x] == chutes[x]){
+                acertos += 1;
+            }
+        }
+        document.write("Você acertou " + acertos + " números");
+        /*
+        var adicionarSorteado = function() {
+            var numero = document.getElementById("numero").value;
+            for(var i = 0; i < sorteados.length; i = i + 1) {
+                if(sorteados[i] == numero) {
+                    alert("Numero já sorteado!");
+                    return;
+                }
+            }
+            sorteados.push(numero);
+            console.log(sorteados);
+        }; */ 
     </script>
 </body>
 </html>
