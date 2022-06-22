@@ -10,17 +10,14 @@
             font-family: 'Courier New', Courier, monospace;
             font-weight: bolder;
         }
-        body{
-            /* background-color: #000; */
-        }
     </style>
 </head>
 <body>
     <h1> 7.4 </h1>
     <canvas id="tela" width="600" height="400"></canvas>
     <script>
-        var tela = document.getElementById("tela");
-        var c = tela.getContext("2d");
+        const tela = document.getElementById("tela");
+        const c = tela.getContext("2d");
         /*
         c.fillStyle="gold";
         c.fillRect(0, 0, 600, 200);
@@ -32,15 +29,47 @@
             alert("alguém clicou no canvas!");
         };
         
-
+        
         c.fillStyle = "red";
         c.fillRect(300,0, 600,200);
         c.fillStyle="green";
         c.fillRect(300,200, 600,400);
-        */
-
         
 
+        c.fillStyle="red";
+        c.fillRect(0, 0, 600, 100);
+        c.fillStyle="blue";
+        c.fillRect (0, 100, 600, 300);
+        c.fillStyle="red";
+        c.fillRect(0,300, 600, 400);
+        c.fillStyle=("white");
+        c.beginPath();
+        c.arc(300,200, 75, 0, 2*3.14);
+        c.fill();
+        
+
+        c.fillStyle="#E05207";
+        c.fillRect(0, 0, 600, 150);
+        c.fillStyle="white";
+        c.fillRect (0, 150, 600, 250);
+        c.fillStyle="green";
+        c.fillRect(0,250, 600, 400);
+        c.fillStyle=("#E05207");
+        c.beginPath();
+        c.arc(300,200, 45, 0, 2*3.14);
+        c.fill();
+        */
+
+        c.fillStyle="red";
+        c.fillRect(0,0, 600, 400);
+        c.fillStyle="white";
+        c.fillRect(150, 0, 150, 400);
+        c.fillStyle="white";
+        c.fillRect(0,150 ,600, 100);
+        c.fillStyle="blue";
+        c.fillRect(0, 175, 600, 50);
+        c.fillStyle="blue";
+        c.fillRect(225-39, 0, 75, 400);
     </script>
 </body>
 </html>
